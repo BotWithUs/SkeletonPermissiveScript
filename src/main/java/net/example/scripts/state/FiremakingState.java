@@ -29,7 +29,6 @@ public class FiremakingState extends BwuScript.State{
     }
 
     // Leafs
-
     private InteractiveLeaf<PathingEntity> captureFireSpriteLeaf = new InteractiveLeaf<>(script, "captureFireSpriteLeaf", () -> script.delayUntil(() -> script.player.getAnimationId() != -1, Rand.nextInt(1, 6)));
     private InteractiveLeaf<Component> selectToolLeaf = new InteractiveLeaf<>(script, "selectToolLeaf", () -> script.delayUntil(() -> !InterfaceManager.isOpen(1179), Rand.nextInt(1, 6)));
     private LeafNode toWoodcuttingStateLeaf = new LeafNode(script, "toWoodcuttingStateLeaf", () -> {

@@ -26,8 +26,8 @@ public class ExampleScript extends BwuScript {
 
     public ExampleScript() {
         // Define the states of the script
-        super(new FiremakingState("Woodcutting", ),
-            new State("Firemaking", null));
+        super(new FiremakingState("Firemaking", this),
+            new WoodcuttingState("Woodcutting", this));
     }
 
     @Override
